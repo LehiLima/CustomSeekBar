@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipToPadding="false"
+    >
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:elevation="3dp"
+        android:background="@drawable/shape_seekbar_background"
+        android:foregroundGravity="center"/>
+
+    <TextView
+        android:id="@+id/txtPreviuslevel"
+        android:layout_width="49dp"
+        android:layout_height="50dp"
+        android:text="10000"
+        android:elevation="4dp"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true" />
+
+    <ImageView
+        android:id="@+id/imgPreviousLevel"
+        android:layout_width="15dp"
+        android:layout_height="10dp"
+        android:background="@drawable/shape_level_seekbar_background"
+        android:elevation="4dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/txtPreviuslevel"/>
+
+    <com.example.lehiteixeira.customseekbar.CustomTextThumbSeekBar
+        android:id="@+id/seekBar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="48dp"
+        android:layout_marginLeft="50dp"
+        android:progress="500"
+        android:thumb="@drawable/shape_seekbar_background"
+        android:splitTrack="false"
+        android:progressDrawable="@drawable/seekbar_progressbar"
+        android:thumbOffset="0dp"
+        android:elevation="4dp"
+        android:maxHeight="10dip"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        />
+
+    <ImageView
+        android:id="@+id/imgNextLevel"
+        android:layout_width="12dp"
+        android:layout_height="10dp"
+        android:background="@drawable/shape_level_seekbar_background"
+        android:elevation="4dp"
+        android:splitTrack="false"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/txtNextLevel" />
+
+    <TextView
+        android:id="@+id/txtNextLevel"
+        android:layout_width="56dp"
+        android:layout_height="50dp"
+        android:text="99999"
+        android:elevation="4dp"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true" />
+</RelativeLayout>
